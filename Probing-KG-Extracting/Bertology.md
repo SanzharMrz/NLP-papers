@@ -1,3 +1,5 @@
+# A Primer in BERTology: What We Know About How BERT Works	
+
 Based on the video and publication, there are something like 8 insights:
 
 1. Bert has linguistic knowledge:
