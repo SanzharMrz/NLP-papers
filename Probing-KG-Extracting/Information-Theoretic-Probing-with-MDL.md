@@ -1,3 +1,5 @@
+# Information Theoretic Probing with MDL	
+
 1. Critical remarks about classical probing methodology, from Lena:
 
 - First of all, it's how we make `sanity checks` for trained probing model. For example, if we compare accuracies for pretrained and randomly initialized model, their scores will be __very close__. Very interesting point, but it doesn't quite match the statements from the Bertology paper.
