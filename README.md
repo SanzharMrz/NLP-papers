@@ -1,5 +1,5 @@
 # NLP-papers
-Overview for most interesing papers by Me:taco: and [Bekon:bacon:](https://github.com/BeksultanSagyndyk)
+Overview for most interesing nlp papers by Me:taco: and [Bekon:bacon:](https://github.com/BeksultanSagyndyk)
 
 | Paper Name  | Link | Overview |
 | ---- | :---: | :---: | 
