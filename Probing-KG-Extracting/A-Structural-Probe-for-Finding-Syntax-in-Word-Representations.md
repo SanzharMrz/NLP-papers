@@ -1,3 +1,5 @@
+# A Structural Probe for Finding Syntax in Word Representations	
+
 Authors propose a simple structural probe for finding syntax in word representations. Their assume that: `Tree structure is embedded if the transformed space has the property that squared L2 distance between two words’ vectors 
 corresponds to the number of edges between the words in the parse tree`. 
 
