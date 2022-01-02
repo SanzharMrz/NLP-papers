@@ -1,6 +1,5 @@
 # NLP-papers
-Overview for most interesing nlp papers by Me:taco: and [Bekon:bacon:](https://github.com/BeksultanSagyndyk)
-
+Overview for most interesing nlp papers by Me:taco: 
 | Paper Name  | Link | Overview |
 | ---- | :---: | :---: | 
 | BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding |  [link](https://arxiv.org/pdf/1810.04805.pdf)  | [overview](Pre-training-of-Deep-Bidirectional-Transformers-for-Language-Understanding.md) |
