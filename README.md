@@ -1,7 +1,11 @@
 # NLP-papers
 Overview for most interesing NLP papers by me:taco: 
 | Paper Name  | Link | Overview |
-| ---- | :---: | :---: | 
+| ---- | :---: | :---: |
+| DSTC11 SIMMC 2.1 |  [link](https://dstc11.dstc.community/tracks)  |  [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/DST/DSTC11_SIMMC2.1.pdf) |
+| DSTC 9-11 overview |  [link](https://dstc10.dstc.community/tracks)  |  [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/DST/DSTC_9-10.pdf) |
+| LaMDA: Language Models for Dialog Applications |  [link](https://arxiv.org/pdf/2007.14062.pdf)  | [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/DST/LaMDA_%20Language%20Models%20for%20Dialog%20Applications.pdf) |
+| Big Bird: Transformers for Longer Sequences |  [link](https://arxiv.org/pdf/2007.14062.pdf)  | [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/Big-Bird-Transformers-for-Longer-Sequences.md) |
 | BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding |  [link](https://arxiv.org/pdf/1810.04805.pdf)  | [overview](Pre-training-of-Deep-Bidirectional-Transformers-for-Language-Understanding.md) |
 | Information Theoretic Probing with MDL | [link](https://arxiv.org/pdf/2003.12298.pdf) | [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/Probing-KG-Extracting/Information-Theoretic-Probing-with-MDL.md) |
 | A Structural Probe for Finding Syntax in Word Representations | [link](https://nlp.stanford.edu/pubs/hewitt2019structural.pdf) | [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/Probing-KG-Extracting/A-Structural-Probe-for-Finding-Syntax-in-Word-Representations.md) |
