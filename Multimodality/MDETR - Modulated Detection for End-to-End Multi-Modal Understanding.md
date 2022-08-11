@@ -21,7 +21,6 @@ It has 3 downstream tasks:
 ## Metrics
 <img width="873" alt="image" src="https://user-images.githubusercontent.com/48170101/184163414-2f6969f1-4ea7-4fda-a75c-0caf4419517c.png">
 
-<img width="435" alt="image" src="https://user-images.githubusercontent.com/48170101/184163741-e047b2a3-7b28-49d1-afa1-93cb899193be.png">
-
-<img width="424" alt="image" src="https://user-images.githubusercontent.com/48170101/184163881-03143ff3-289c-4d19-ad5a-2ce812920b7b.png">
-
+Phrase Grounding           |  Referring
+:-------------------------:|:-------------------------:
+<img width="435" alt="image" src="https://user-images.githubusercontent.com/48170101/184163741-e047b2a3-7b28-49d1-afa1-93cb899193be.png"> |  <img width="424" alt="image" src="https://user-images.githubusercontent.com/48170101/184163881-03143ff3-289c-4d19-ad5a-2ce812920b7b.png">
