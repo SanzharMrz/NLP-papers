@@ -16,7 +16,8 @@ encoder, this additional contrastive alignment loss ensures that the embeddings 
 It has 3 downstream tasks:
 - Referring expression comprehension. We train our model to directly predict the bounding box, given a referring expression and the associated image. During pre-training, given the caption “The woman wearing a blue dress standing next to the rose bush.”, MDETR would be trained to predict boxes for all referred objects such as the woman, the blue dress and the rose bush. However, for referring expressions, the task would be to only return one bounding box, which signifies the woman being referred to by the entire expression.
 - Phrase grounding. The task is to provide a set of bounding boxes for each phrase. For each sentence in the test set, we predict 100 bounding boxes and use the soft token alignment prediction to rank the boxes according to the score given to the token positions that correspond to the phrase. 
-- Visual Question Answering
+- Referring expression segmentation. We show that our approach can be extended to perform segmentation by evaluating on the referring expression segmentation task of the recent PhraseCut dataset which consists of images from VG, annotated with segmentation masks for each referring expression
+- Visual Question Answering. To train MDETR for this task, we use the scene graph provided in GQA to obtain the alignment between question words and the boxes.
 
 ## Metrics
 <img width="873" alt="image" src="https://user-images.githubusercontent.com/48170101/184163414-2f6969f1-4ea7-4fda-a75c-0caf4419517c.png">
