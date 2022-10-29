@@ -17,6 +17,7 @@ For training, they balanced the data set sizes by
 drawing for a mini batch roughly the same number
 of samples from each data set. Data from smaller
 data sets is repeated.
+
 <img width="355" alt="Screen Shot 2022-10-29 at 14 43 47" src="https://user-images.githubusercontent.com/48170101/198822411-1cc579bf-8eb5-4138-931b-70a17853e355.png">
 
 # Training
@@ -30,7 +31,7 @@ M(si) and Mˆ (ti) ≈ M(si). For a given minibatch B, they minimize the mean-sq
 
 <img width="341" alt="Screen Shot 2022-10-29 at 14 29 25" src="https://user-images.githubusercontent.com/48170101/198821959-4618ee01-f842-4892-8a1b-4a28e1ee94d7.png">
 
-This training procedure is illustrated here:
+Training procedure is illustrated here:
 
 <img width="701" alt="Screen Shot 2022-10-29 at 14 26 56" src="https://user-images.githubusercontent.com/48170101/198821885-007b9f7a-ec11-44cd-b3ba-0f055d43db0a.png">
 
