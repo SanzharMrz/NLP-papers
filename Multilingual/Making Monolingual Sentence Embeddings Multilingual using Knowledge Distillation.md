@@ -13,7 +13,11 @@ Important part about training such type of bi-encoders:
 > Selecting random alternative translations usually leads to mediocre results. Instead, hard negatives (Guo et al., 2018) are required, i.e., alternative incorrect translations that have a high similarity to the correct translation. To get these hard negatives, mUSE was first trained with random negatives samples, then, this preliminary sentence encoder was used to identify hard negative examples. They then re-trained the network.
 
 # Data
-
+For training, they balanced the data set sizes by
+drawing for a mini batch roughly the same number
+of samples from each data set. Data from smaller
+data sets is repeated.
+<img width="355" alt="Screen Shot 2022-10-29 at 14 43 47" src="https://user-images.githubusercontent.com/48170101/198822411-1cc579bf-8eb5-4138-931b-70a17853e355.png">
 
 # Training
 They require a teacher model M, that maps sentences
@@ -29,3 +33,7 @@ M(si) and Mˆ (ti) ≈ M(si). For a given minibatch B, they minimize the mean-sq
 This training procedure is illustrated here:
 
 <img width="701" alt="Screen Shot 2022-10-29 at 14 26 56" src="https://user-images.githubusercontent.com/48170101/198821885-007b9f7a-ec11-44cd-b3ba-0f055d43db0a.png">
+
+# Results
+<img width="698" alt="Screen Shot 2022-10-29 at 14 55 41" src="https://user-images.githubusercontent.com/48170101/198822872-4ae04185-fdb5-4f56-b1f9-ac8fa68b17c0.png">
+
