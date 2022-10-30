@@ -1,6 +1,5 @@
 # Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation
 
-# Abstract
 Authors are presenting an easy and efficient method to extend existing sentence embedding models to new languages. This allows to create multilingual versions from previously monolingual models. The training is based on the idea that a translated sentence should be mapped to the same location in the vector space as the original sentence. They are using the original (monolingual) model to generate sentence embeddings for the source language and then train a new system on translated sentences to mimic the original model
 
 Compared to other methods
