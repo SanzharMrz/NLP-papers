@@ -19,7 +19,7 @@ where Sc is the set of support tokens whose tags are c. In this work, we use the
 
 STRUCTSHOT discards training phase in CRF and only makes use of its Viterbi decoder during inference. In particular, authors utilize a transition matrix that captures transition probabilities between three abstract NER tags: O, I, I-Other4.
 
-The key idea in STRUCTSHOT is that it estimates the abstract transition probabilities by counting the number of times a particular transition was observed in the training data. The transition probability from X to Y is
+The key idea in STRUCTSHOT is that it estimates the abstract transition probabilities by counting the number of times a particular transition was observed in the training data. The transition probability from X to Y is:
 
 <img width="277" alt="Screenshot 2022-12-08 at 07 28 54" src="https://user-images.githubusercontent.com/48170101/206333671-554d16db-811c-4e5d-9f47-8965827667a2.png">
 
