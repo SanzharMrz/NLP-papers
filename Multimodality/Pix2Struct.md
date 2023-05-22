@@ -1,5 +1,6 @@
-**Pix2Struct is an image-encoder-text-decoder based on the Vision Transformer (ViT)
-Problem with VIT**
+**Pix2Struct is an image-encoder-text-decoder based on the Vision Transformer (ViT)**
+
+**Problem with VIT**
 
 Before extracting fixed-size patches, the standard ViT scales the input images to a
 predefined resolution, which creates two undesirable effects:
