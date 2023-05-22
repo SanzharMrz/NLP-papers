@@ -8,8 +8,9 @@ predefined resolution, which creates two undesirable effects:
 **Solution:
 
 1) always scale our input image up or down such that we extract the maximal
-number of patches that fit within the given sequence length
-![image](https://github.com/SanzharMrz/NLP-papers/assets/46630209/262341de-81d0-4b6c-875c-e909c6010e15)
+number of patches that fit within the given sequence length.
+![image](https://github.com/SanzharMrz/NLP-papers/assets/46630209/465f1d7e-a435-4c55-88c3-c46fed97069b)
+
 
 
 2)to handle variable resolutions unambiguously, we use 2-dimensional absolute positional
