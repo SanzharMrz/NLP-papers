@@ -1,14 +1,14 @@
 **Pix2Struct is an image-encoder-text-decoder based on the Vision Transformer (ViT)**
 
-To summarize, our major contributions are as follows:
+summarize:
 
-• We introduce the area of general-purpose visually-situated language understanding, which consists of diverse tasks but common challenges.
+• they introduce the area of general-purpose visually-situated language understanding, which consists of diverse tasks but common challenges.
 
-• We propose a screenshot parsing pretraining objective based on the HTML source of web
-pages. We show that our objective is more effective than previous attempts at enabling the
+• they propose a screenshot parsing pretraining objective based on the HTML source of web
+pages. they show that our objective is more effective than previous attempts at enabling the
 elegant pixel-to-text design for general-purpose visually-situated language understanding.
 
-• We introduce variable-resolution input representations to the Vision Transformer and new finetuning strategies that seamlessly integrate language and vision inputs by directly rendering any
+• they introduce variable-resolution input representations to the Vision Transformer and new finetuning strategies that seamlessly integrate language and vision inputs by directly rendering any
 language prompts on top of the input image
 
 **Problem with VIT**
