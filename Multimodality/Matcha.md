@@ -7,6 +7,7 @@ reasoning tasks.
 the image-to-text model is required to generate its
 underlying data table or the code used to render
 it. 
+
 The second task is **math reasoning pretraining.**
 We pick two numerical reasoning dataset MATH
 (Saxton et al., 2019) and DROP (Dua et al., 2019),
