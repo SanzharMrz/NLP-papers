@@ -43,3 +43,32 @@ performance,
 Specifically, they create images of text snippets with random
 colors and fonts on a white background. The model simply needs to decode the original text.
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/46630209/62e01e24-d839-4236-96eb-8899416ee678)
+
+Results:
+
+pretrain two model variants: 
+
+(a) a base model with 282M parameters including 12
+transformer layers with a hidden size of 768, and 
+
+(b) a large model with 1.3B parameters including
+18 layers with a hidden size of 1536. 
+
+Both models have the same warmup stage using text rendered
+from BooksCorpus (Zhu et al., 2015) lasting 30K steps with a maximum input sequence length of
+128 patches. 
+
+The base model  -  270K steps with the screenshot parsing
+objective using
+
+batch size -  3072 on 64 Google Cloud TPUs.
+
+The large model -  170K steps with 
+
+batch size of 1024 on 128 Google Cloud TPUs.
+
+input sequence length  -  2048 patches 
+
+optimizer -  Adafactor  
+
+learning rate schedule uses a linear warmup of 1000 steps to 0.01, followed by cosine decay to 0.
