@@ -9,6 +9,9 @@ predefined resolution, which creates two undesirable effects:
 
 1) always scale our input image up or down such that we extract the maximal
 number of patches that fit within the given sequence length
+![image](https://github.com/SanzharMrz/NLP-papers/assets/46630209/262341de-81d0-4b6c-875c-e909c6010e15)
+
+
 2)to handle variable resolutions unambiguously, we use 2-dimensional absolute positional
 embeddings for the input patches
 
