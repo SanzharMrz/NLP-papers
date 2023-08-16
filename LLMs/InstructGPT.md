@@ -34,3 +34,4 @@ Data, splitted by training stages. The SFT dataset contains about 13k training p
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/5d000820-4c60-4c1b-8c82-a82a9bbfeba1)
 
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/0b01a745-fb6b-497b-9ede-065b922aa014)
+
