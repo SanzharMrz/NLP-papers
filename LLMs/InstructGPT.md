@@ -17,8 +17,17 @@ Data, splitted by training stages. The SFT dataset contains about 13k training p
 
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/b953c466-c157-4409-86a0-0a565f841f5d)
 
-
 # Training
+
+**SFT** - model, which were fine-tuned to rank pairs prompt -> response. The model, overfits super fast, during 1 epoch, but anyway authors keep training it for 16 epochs. Finally, best model were validated during RM performance
+
+**RM** - model, which were trained on the top of **SFT**, . It predicts scalar value for answer candidates at specific prompt. The key idea here is that the model is learning to predict which of the two responses a human labeler would prefer.
+
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/51fbaa5c-c69d-4193-8d62-faf08a142172)
+
+**RL** - 
+
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/61003864-b3f8-4a59-ac81-768f6733721c)
 
 # Evaluation
 
