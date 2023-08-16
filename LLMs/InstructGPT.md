@@ -13,6 +13,10 @@ algorithm
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/7ae98517-f768-4854-b848-ee29a17fad0d)
 
 # Dataset
+Data, splitted by training stages. The SFT dataset contains about 13k training prompts (from the API and labeler-written), the RM dataset has 33k training prompts (from the API and labeler-written), and the PPO dataset has 31k training prompts (only from the API).
+
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/b953c466-c157-4409-86a0-0a565f841f5d)
+
 
 # Training
 
