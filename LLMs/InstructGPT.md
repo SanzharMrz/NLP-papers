@@ -25,11 +25,12 @@ Data, splitted by training stages. The SFT dataset contains about 13k training p
 
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/51fbaa5c-c69d-4193-8d62-faf08a142172)
 
-**RL** - 
+**RL** - they've fine-tuned, SFT (already tuned). The environment is a bandit environment which presents a random customer prompt and expects a response to the prompt. Given the prompt and response, it produces a reward determined by the **reward model** and ends the episode. In addition, they add a per-token KL penalty from the SFT model at each token to mitigate overoptimization of the reward model.
 
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/61003864-b3f8-4a59-ac81-768f6733721c)
 
 # Evaluation
 
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/5d000820-4c60-4c1b-8c82-a82a9bbfeba1)
 
-
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/0b01a745-fb6b-497b-9ede-065b922aa014)
