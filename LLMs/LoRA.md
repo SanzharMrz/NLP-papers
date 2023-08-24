@@ -21,7 +21,7 @@ fewer parameters. r is chosen to be small of order 2-8, making this value very s
 
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/454a2548-8d79-41ea-9dd3-9015796b6203)
 
-In this way, during training, we need to keep in memory the weights ```W``` of the original model and ```W'= B @ A``` of the pre-trained model, and read the gradients only for the "new" small matrices ```A``` and ```B```.
+In this way, during training, we need to keep in memory the weights ```W``` of the original model and ```W'= B @ A``` of the pre-trained model, and read the gradients only for the "new" small matrices ```A``` and ```B```. They use a random Gaussian initialization for A and zero for B, so ```W'= B @ A``` is zero at the beginning of training.
 
 # Related works
 
