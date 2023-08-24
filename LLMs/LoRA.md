@@ -1,5 +1,6 @@
 # LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS
 
+Authours propose Low-Rank Adaptation, or LoRA, which freezes the pretrained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks. Compared to GPT-3 175B fine-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times.
 
 # Conception
 
@@ -7,9 +8,8 @@
 
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/fc35bb42-1a77-4523-8df2-9655e6638879)
 
-![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/b4574259-bc4c-495b-badb-58f32d46ee32)
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/454a2548-8d79-41ea-9dd3-9015796b6203)
 
-![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/a70d28e3-8132-4ef0-826f-03851357f9bf)
 
 # Related works
 
