@@ -42,11 +42,11 @@ In this way, during training, we need to keep in memory the weights ```W``` of t
 
 - Reducing the number of trained parameters reduces the requirements to the dataset.
 
-- LoRA models take up significantly less disk space. We store one "base" model, which really weighs a lot, and a large number of LoRA modules (e.g. styles for Stable Diffusion or additional training for different languages for Copilot), which weigh almost nothing. This makes such models easier to store and distribute. For GPT-3, with 350 GB weights, the A and B matrices for all linear layers totaled 35 MB!
+- LoRA models take up significantly less disk space. We store one "base" model, which really weighs a lot, and a large number of LoRA modules (e.g. styles for Stable Diffusion or additional training for different languages for Copilot), which weigh almost nothing. This makes such models easier to store and distribute. For GPT-3, with 350 GB weights, the A and B matrices for all linear layers totaled 35 MB.
 
-- No output latency. We can compute W' = W + BA before use, so a new model will require the same amount of computation as a non-faintune model.
+- No output latency. We can compute ```W' = W + BA``` before use, so a new model will require the same amount of computation as a non-faintune model.
 
-- It is possible to change matrices A and B right on the fly, in the middle of a dialog, asking the user, for example, what style to answer in.
+- It is possible to change matrices ```A``` and ```B``` right on the fly, in the middle of a dialog, asking the user, for example, what style to answer in.
 
 # Metrics
 
