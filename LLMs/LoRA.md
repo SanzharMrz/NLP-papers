@@ -17,7 +17,7 @@ In general we will need to train in:
 
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/d7982a35-9863-41d6-8044-d49286d2dd3f)
 
-fewer parameters. r is chosen to be small of order 2-8, making this value very small \approx 10^{-2} ), however we lose a little in generality since now, we automatically assume that W has a low rank.
+fewer parameters. r is chosen to be small of order 2-8, making this value very small (approx 10^(-2)), however we lose a little in generality since now, we automatically assume that ```W'``` has a low rank.
 
 ![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/454a2548-8d79-41ea-9dd3-9015796b6203)
 
