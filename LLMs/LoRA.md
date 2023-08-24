@@ -25,8 +25,19 @@ In this way, during training, we need to keep in memory the weights ```W``` of t
 
 # Related works
 
-Placeholder
+- Adapter layers. Injection layers, we training them while freezing the whole network. Takes too much time for inference
+
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/b4baf5a6-2047-466b-b024-5daa0ea09484)
+
+- Classical fine-tuniung. Nothing to add (a lot of computational efforts)
+- Prefix-embedding tuning (PreEmbed) inserts special tokens among the input tokens. These special tokens have trainable word embeddings and are generally not in the model’s vocabulary.
+- Bias-only or BitFit is a baseline where we only train the bias vectors while freezing everything else.
+Contemporarily, this baseline has also been studied by BitFit
+- ..
+- etc
 
 # Metrics
 
-Placeholder
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/0aa16398-ccd8-4d49-a0be-c5ce576ab3f5)
+
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/028b19d0-a3d5-4605-acc1-e0513bee60ad)
