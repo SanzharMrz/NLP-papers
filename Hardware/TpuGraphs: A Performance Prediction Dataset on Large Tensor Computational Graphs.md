@@ -16,9 +16,11 @@ A _**Tile**_ collection of configuration, controls, the tile size of each fused 
 
 # Conception
 
-THe Dataset is a bunch of multiple collections of data, differing in terms of (1) the compiler optimization (i.e., layout and tile), (2) the source of graphs, and (3) the search strategy.
+The Dataset is a bunch of multiple collections of data, differing in terms of (1) the compiler optimization (i.e., layout and tile), (2) the source of graphs, and (3) the search strategy.
 
 # Baseline model
+
+The goal of a learned cost model is to rank the performance of different configurations of a given graph
 
 **Layout.** Our default baseline model is a 3-layer GraphSAGE. We concatenate node features and per-node configuration features as inputs to the GNN. If a node is non-configurable (having no layout configuration), we use a zero vector as configuration features. 
 
