@@ -25,4 +25,4 @@ Overview for most interesing NLP papers by me :taco:
 |==============|==============|==============|==============|
 | Simple and Effective Few-Shot Named Entity Recognition with Structured Nearest Neighbor Learning | NER | [link](https://aclanthology.org/2020.emnlp-main.516.pdf) | [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/NER/Simple%20and%20Effective%20Few-Shot%20Named%20Entity%20Recognition%20with%20Structured%20Nearest%20Neighbor%20Learning.md) |
 |==============|==============|==============|==============|
-| TpuGraphs: A Performance Prediction Dataset on Large Tensor Computational Graphs | Hardware | [link](https://arxiv.org/abs/2308.13490) | [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/Hardware/TpuGraphs%3A%20A%20Performance%20Prediction%20Dataset%20on%20Large%20Tensor%20Computational%20Graphs.md) |
+| TpuGraphs: A Performance Prediction Dataset on Large Tensor Computational Graphs | Kaggle-specific | [link](https://arxiv.org/abs/2308.13490) | [overview](https://github.com/SanzharMrz/NLP-papers/blob/main/Kaggle-specific/tpu-graphs.md) |
