@@ -78,7 +78,7 @@ Korthikanti et al. (2022).(review in progress)
 
 During training, They tracked the performance of their
 models on a few question answering and common
-sense benchmarks, and report them in Figure 2.
+sense benchmarks.
 On most benchmarks, the performance improves
 steadily, and correlates with the training perplexity
 of the model (see Figure 1).
