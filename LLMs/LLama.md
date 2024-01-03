@@ -1,4 +1,4 @@
-LLaMA: Open and Efficient Foundation Language Models
+**LLaMA: Open and Efficient Foundation Language Models**
 
 LLaMA is a collection of foundation language models ranging from 7B to 65B parameters.
 They have been trained on trillions of tokens. 
