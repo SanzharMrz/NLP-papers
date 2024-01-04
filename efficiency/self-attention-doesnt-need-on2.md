@@ -47,6 +47,7 @@ To resolve this problem, they invented additional scalar - m*
 1) which keeps track of the maximum score that the incremental algorithm has seen so far
    
 2) renormalize the sums of exponentiated values as needed
+<img width="645" alt="Screenshot 2024-01-04 at 16 21 35" src="https://github.com/SanzharMrz/NLP-papers/assets/46630209/28fdf34b-0223-480b-9930-39234cc79d8d">
 
-<img width="643" alt="Screenshot 2024-01-04 at 16 12 45" src="https://github.com/SanzharMrz/NLP-papers/assets/46630209/58e2bfea-17c5-4abc-9655-01270d7d3f98">
-
+# results
+<img width="650" alt="Screenshot 2024-01-04 at 16 19 11" src="https://github.com/SanzharMrz/NLP-papers/assets/46630209/af6bd29e-5851-44b5-b748-ed9634ee01a0">
