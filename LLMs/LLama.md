@@ -33,6 +33,9 @@ Notably, they split all numbers into individual digits and fallback to bytes to 
 
 Table 2: Model sizes, architectures, and optimization hyper-parameters.
 
+**Architecture**
+The network is based on the transformer architecture (Vaswani et al., 2017). (encoder-decoder)
+
 **Pre-normalization [GPT3].**  To improve the
 training stability, they normalize the input of each
 transformer sub-layer, instead of normalizing the
