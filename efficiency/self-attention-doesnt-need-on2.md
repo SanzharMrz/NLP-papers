@@ -1,4 +1,4 @@
-**Self-attention Does Not Need O(n2) Memory**
+# Self-attention Does Not Need O(n2) Memory
 
 In the paper Self-attention Does Not Need O(n2) Memory, the Google team introduces simple algorithms for attention and self-attention that require only constant memory and logarithmic memory, respectively. At a sequence length of 16384, the approach can reduce the self-attention memory overhead by 59x for inference and by 32x for differentiation
 
@@ -6,7 +6,7 @@ In the paper Self-attention Does Not Need O(n2) Memory, the Google team introduc
 
 <img width="632" alt="Screenshot 2024-01-04 at 14 43 40" src="https://github.com/SanzharMrz/NLP-papers/assets/46630209/a4eacf1b-8f47-48db-b826-5df5b15587ae">
 
-attention algorhitm:
+attention algorithim:
 1) The attention operation on a single query produces a weighted sum of value vectors.
 2) The weights are determined by the softmax of the dot products between the query and the keys.
 
@@ -16,14 +16,16 @@ Transformers use self-attention, it means for each element of sequence we need o
 
 # Main algo
 
-**single attention case**
+## Single attention case
 
 first step:
+
 <img width="635" alt="Screenshot 2024-01-04 at 15 59 28" src="https://github.com/SanzharMrz/NLP-papers/assets/46630209/99f2b734-11c3-4660-9a1b-2c2427e851fd">
 
 
 second step:
-1)init vectors v* and scalar s* with 0
+
+1) init vectors v* and scalar s* with 0
 
 2) loop over k_n = [k1,k2,..kn] and v_n=[v1,v2,...vn] for each k_i and v_i compute s_i
    
@@ -34,10 +36,11 @@ second step:
 
 <img width="640" alt="Screenshot 2024-01-04 at 15 57 59" src="https://github.com/SanzharMrz/NLP-papers/assets/46630209/fb5dc415-34fb-44f2-8473-a20b8d2e7c36">
 
-**self attention case**
+## Self-attention case
+
 To extend this algorithm to self-attention, just compute the results to all queries sequentially.
 
-# numerical stability problem
+# Numerical stability problem
 
 default and new attention are not numerically stable when using floating point arithmetic
 for example:
@@ -49,5 +52,5 @@ To resolve this problem, they invented additional scalar - m*
 2) renormalize the sums of exponentiated values as needed
 <img width="645" alt="Screenshot 2024-01-04 at 16 21 35" src="https://github.com/SanzharMrz/NLP-papers/assets/46630209/28fdf34b-0223-480b-9930-39234cc79d8d">
 
-# results
+# Results
 <img width="650" alt="Screenshot 2024-01-04 at 16 19 11" src="https://github.com/SanzharMrz/NLP-papers/assets/46630209/af6bd29e-5851-44b5-b748-ed9634ee01a0">
