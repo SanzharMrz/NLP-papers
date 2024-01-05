@@ -42,7 +42,7 @@ To extend this algorithm to self-attention, just compute the results to all quer
 
 # Numerical stability problem
 
-default and new attention are not numerically stable when using floating point arithmetic
+Default and new attention are not numerically stable when using floating point arithmetic
 for example:
 Forscores ≥ 89 the exponentiation results in inf (for bfloat16 and float32).
 
