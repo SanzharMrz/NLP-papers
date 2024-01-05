@@ -1,4 +1,4 @@
-**LLaMA: Open and Efficient Foundation Language Models**
+# LLaMA: Open and Efficient Foundation Language Models
 
 LLaMA is a collection of foundation language models ranging from 7B to 65B parameters.
 They have been trained on trillions of tokens. 
@@ -6,6 +6,7 @@ Also, it shows that it is possible to train state-of-the-art models using exclus
 without resorting to proprietary and inaccessible datasets.
 Large transformers were trained on a substantial amount of textual data using a standard optimizer.
 
+# Dataset
 
 | Dataset          | Sampling prop. | Epochs | Disk size |
 |------------------|----------------|--------|-----------|
@@ -17,10 +18,9 @@ Large transformers were trained on a substantial amount of textual data using a 
 | ArXiv            | 2.5%           | 1.06   | 92 GB     |
 | StackExchange    | 2.0%           | 1.03   | 78 GB     |
 
+# Tokenizer
 
-Table 2: the dataset
-
-**Tokenizer.** The authors tokenize the data using the bytepair encoding (BPE) algorithm (Sennrich et al., 2015),
+The authors tokenize the data using the bytepair encoding (BPE) algorithm (Sennrich et al., 2015),
 employing the implementation from SentencePiece (Kudo and Richardson, 2018).
 Notably, they split all numbers into individual digits and fallback to bytes to decompose unknown UTF-8 characters.
 | Params | Dimension | N Heads | N Layers | Learning Rate | Batch Size | N Tokens |
@@ -33,20 +33,15 @@ Notably, they split all numbers into individual digits and fallback to bytes to 
 
 Table 2: Model sizes, architectures, and optimization hyper-parameters.
 
-**Architecture**
+# Architecture
+
 The network is based on the transformer architecture (Vaswani et al., 2017). (encoder-decoder)
 
-**Pre-normalization [GPT3].**  To improve the
-training stability, they normalize the input of each
-transformer sub-layer, instead of normalizing the
-output(RMSNorm)
+**Pre-normalization [GPT3].** To improve the training stability, they normalize the input of each transformer sub-layer, instead of normalizing the output(RMSNorm)
 
-**SwiGLU activation function [PaLM].** They replace the ReLU non-linearity by the SwiGLU activation function, to
-improve the performance. 
+**SwiGLU activation function [PaLM].** They replace the ReLU non-linearity by the SwiGLU activation function, to improve the performance. 
 
-**Rotary Embeddings [GPTNeo].** They remove the
-absolute positional embeddings, and instead, add
-rotary positional embeddings (RoPE), at each layer of the network.
+**Rotary Embeddings [GPTNeo].** They remove the absolute positional embeddings, and instead, add rotary positional embeddings (RoPE), at each layer of the network.
 
 ```python
 # Optimizer Configuration
