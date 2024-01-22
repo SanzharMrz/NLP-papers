@@ -34,4 +34,14 @@ The multimodal tokens corresponding to these observations are interleaved with t
 
 Where ```<img i>``` represents an embedding of an image. The output of PaLM-E is text generated auto-regressively by the model. In their case, Multi-modal information such as image observations injected into the LLM by skipping the discrete token level and directly mapping the continuous observations into the language embedding space X
 
-So it means that authors at prefix prompt, mixing natural language tokens with some multi-modal observation, where observations are produced by another, specific encoders
+So it means that authors at prefix prompt, mixing natural language tokens with some multi-modal observation, where observations are produced by another, specific encoders.
+
+# Modalities
+
+As I mentioned before, they have specific encoders for each modality, let's start with
+
+- State vector, it's a vector describing the state of the objects in a scene. For example, vector could contain the pose, size, color etc. of those objects. Then, the MLP maps vector into the language embedding space.
+- General Image Encoder, in their approach, it's a ViT, transformer architecture which maps an image I into a number of token embeddings
+- Object centric representer, model which parses objects poses, signs and all visual semantic information in context of specific concrete object
+- OSRT (object specific representation transformer), OSRT learns 3D-centric neural scene representations on in-domain data through a novel view synthesis task. Its scene representations consist of object slots, then projects each of these slots some space with MLP
+- Authors labeling objects in scene with a special tokens ```<obj_1> ... <obj_n>```
