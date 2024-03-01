@@ -14,6 +14,8 @@ Authours propose Low-Rank Adaptation, or LoRA, which freezes the pretrained mode
 Contemporarily, this baseline has also been studied by BitFit
 - ..
 - etc
+  
+![image](https://github.com/SanzharMrz/NLP-papers/assets/48170101/9884bbc3-2b63-4ac8-af76-a094986e461d)
 
 # Conception
 
