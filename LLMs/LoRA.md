@@ -39,7 +39,7 @@ fewer parameters. r is chosen to be small of order 2-8, making this value very s
 In this way, during training, we need to keep in memory the weights ```W``` of the original model and ```W'= B @ A``` of the pre-trained model, and read the gradients only for the "new" small matrices ```A``` and ```B```. They use a random Gaussian initialization for A and zero for B, so ```W'= B @ A``` is zero at the beginning of training.
 
 # Insights
-
+- LoRA can be applied to dense layers, attention weights, adaptation heads, and projection layers. 
 - Significantly less resource-intensive pre-training. Now a model of LLaMA / GPT-3* / .... level can be retrained by any owner of a mass video card or even using google colab, from a phone)). any owner of a mass video card or in general using google colab, from a phone)))).
 
 - Reducing the number of trained parameters reduces the requirements to the dataset.
