@@ -5,7 +5,11 @@ Authors are providing comprehensive comparison between two alignment approaches 
 > 1) Is DPO truly superior to PPO in the RLHF domain? 
 > 2) Can the performance of PPO be substantially improved in common RLHF benchmarks?
 
+With the following outcomes:
 
+- Theoretical and empirical analyses reveal that DPO may suffer from performance issues due to distribution shifts, leading to biased solutions.
+- The authors identify critical factors for improving PPO, such as advantage normalization and large batch sizes, which significantly boost its performance.
+- Extensive experiments demonstrate that PPO consistently outperforms DPO across various RLHF tasks, including challenging code generation, where PPO achieves state-of-the-art results.
 
 # Background and related works
 
