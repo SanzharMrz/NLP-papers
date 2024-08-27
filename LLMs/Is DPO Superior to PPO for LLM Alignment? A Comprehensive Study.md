@@ -19,6 +19,8 @@ So they assume that with the right enhancements, PPO can achieve better results 
 
 ## Reward-based (PPO)
 
+![image](https://github.com/user-attachments/assets/0d44b6a6-e111-4525-bf5d-945dc56c9864)
+
 The Bradley-Terry model is used to represent human preferences, with the human preference probability given by:
 
 ```math
