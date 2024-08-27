@@ -136,7 +136,9 @@ LDPO: DPO loss function.
 - The [APO](https://huggingface.co/papers/2408.06266) method introduces an “anchored” version of the alignment objective. There are two variants: apo_zero and apo_down. 
 
 # Understanding the Limitation of DPO
-Pass
+
+![image](https://github.com/user-attachments/assets/039a7f44-e737-4eed-a9df-2068137abced)
+
 
 # Key Factors to PPO for RLHF
 Pass
