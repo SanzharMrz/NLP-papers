@@ -63,6 +63,10 @@ The RL fine-tuning phase optimization problem is given by:
 𝐷𝐾𝐿: Kullback-Leibler divergence.
 𝜋𝑟𝑒𝑓: Reference policy.
 ```
+### Variations of PPO
+- PPO-Penalty approximately solves a KL-constrained update like TRPO, but penalizes the KL-divergence in the objective function instead of making it a hard constraint, and automatically adjusts the penalty coefficient over the course of training so that it’s scaled appropriately.
+
+- PPO-Clip (used in original InstructGPT paper) doesn’t have a KL-divergence term in the objective and doesn’t have a constraint at all. Instead relies on specialized clipping in the objective function to remove incentives for the new policy to get far from the old policy.
 
 ## Reward-free (DPO)
 
@@ -117,8 +121,19 @@ LDPO: DPO loss function.
 𝛽: Regularization parameter.
 ```
 
-
-
+### Variations of DPO
+- The [RSO](https://huggingface.co/papers/2309.06657) authors propose to use a hinge loss on the normalized likelihood from the SLiC paper.
+- The [IPO](https://huggingface.co/papers/2310.12036) authors provide a deeper theoretical understanding of the DPO algorithms and identify an issue with overfitting and propose an alternative loss. 
+- The [cDPO](https://ericmitchell.ai/cdpo.pdf) is a tweak on the DPO loss where we assume that the preference labels are noisy with some probability. In this approach, the label_smoothing parameter in the DPOConfig is used to model the probability of existing label noise. 
+- The [EXO](https://huggingface.co/papers/2402.00856) authors propose to minimize the reverse KL instead of the negative log-sigmoid loss
+- The [NCA](https://huggingface.co/papers/2402.05369) authors shows that NCA optimizes the absolute likelihood for each response rather than the relative likelihood.
+- The [Robust DPO](https://huggingface.co/papers/2403.00409) authors propose an unbiased estimate of the DPO loss that is robust to preference noise in the data. 
+- The [BCO](https://huggingface.co/papers/2404.04656) authors train a binary classifier whose logit serves as a reward so that the classifier maps {prompt, chosen completion} pairs to 1 and {prompt, rejected completion} pairs to 0. 
+- The [TR-DPO](https://huggingface.co/papers/2404.09656) paper suggests syncing the reference model weights after every ref_model_sync_steps steps of SGD with weight ref_model_mixup_alpha during DPO training.
+- The [RPO](https://huggingface.co/papers/2404.19733) paper implements an iterative preference tuning algorithm using a loss related to the RPO loss in this paper that essentially consists of a weighted SFT loss on the chosen preferences together with the DPO loss.
+- The [SPPO](https://huggingface.co/papers/2405.00675) authors claim that SPPO is capable of solving the Nash equilibrium iteratively by pushing the chosen rewards to be as large as 1/2 and the rejected rewards to be as small as -1/2 and can alleviate data sparsity issues.
+- The [AOT](https://huggingface.co/papers/2406.05882) authors propose to use Distributional Preference Alignment Via Optimal Transport. Traditionally, the alignment algorithms use paired preferences at a sample level, which does not ensure alignment on the distributional level. 
+- The [APO](https://huggingface.co/papers/2408.06266) method introduces an “anchored” version of the alignment objective. There are two variants: apo_zero and apo_down. 
 
 # Understanding the Limitation of DPO
 Pass
