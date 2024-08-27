@@ -11,6 +11,8 @@ With the following outcomes:
 - The authors identify critical factors for improving PPO, such as advantage normalization and large batch sizes, which significantly boost its performance.
 - Extensive experiments demonstrate that PPO consistently outperforms DPO across various RLHF tasks, including challenging code generation, where PPO achieves state-of-the-art results.
 
+So they assume that with the right enhancements, PPO can achieve better results in aligning LLMs
+
 # Background and related works
 
 ![image](https://github.com/user-attachments/assets/a32347a7-a8e6-4902-94c7-152e081c2c1d)
