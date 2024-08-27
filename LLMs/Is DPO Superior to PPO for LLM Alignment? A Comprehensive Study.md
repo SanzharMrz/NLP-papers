@@ -139,36 +139,6 @@ LDPO: DPO loss function.
 
 # Understanding the Limitation of DPO
 
-```math
-\text{Theorem 4.1:}
-\text{Given a ground-truth reward } r \text{ and a preference dataset } \mathcal{D}, 
-\text{let } \Pi_{\text{PPO}} \text{ be the class of policies induced by training reward model } r_{\phi} \text{ over } \mathcal{D} \text{ and running PPO to optimize } J_{r_{\phi}}(\theta).
-\text{ Let } \Pi_{\text{DPO}} \text{ be the class of policies induced by minimizing the DPO objective (Eq. 7).}
-\text{We have the following conclusion: }
-\Pi_{\text{PPO}} \subseteq \Pi_{\text{DPO}}.
-```
-
-**Proof:**
-
-```math
-\text{1. Subset Relationship:}
-\quad \Pi_{\text{PPO}} \subseteq \Pi_{\text{DPO}}
-
-\text{For any policy } \pi_{\text{PPO}} \in \Pi_{\text{PPO}}, \text{ there exists a reward model } r^* 
-\text{ such that } \pi_{\text{PPO}} \text{ can be represented as a maximizer of } J_{r^*}(\pi).
-
-\text{Since the DPO loss minimizes the reward learning loss, any solution that minimizes the PPO objective will also minimize the DPO objective, hence } \pi_{\text{PPO}} \in \Pi_{\text{DPO}}.
-```
-
-```math
-\text{2. Proper Subset:}
-\quad \Pi_{\text{PPO}} \subsetneq \Pi_{\text{DPO}}
-
-\text{Consider a counter-example with a simple state-less case involving three actions. In this scenario, DPO can produce a policy } \pi_{\text{DPO}} \text{ that assigns high probability to an undesirable action, which PPO would avoid due to the constraints imposed by the reference model } \pi_{\text{ref}}.
-
-\text{This example shows that there exist solutions in } \Pi_{\text{DPO}} \text{ that are not in } \Pi_{\text{PPO}}, \text{ confirming that } \Pi_{\text{PPO}} \subsetneq \Pi_{\text{DPO}}.
-```
-
 
 ![image](https://github.com/user-attachments/assets/039a7f44-e737-4eed-a9df-2068137abced)
 
