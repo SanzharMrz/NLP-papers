@@ -156,11 +156,33 @@ briefly:
 - In the case of DPO, this behavior persists in both the reference and aligned models.
 - In the case of PPO, we see that although the reward model has the same issue, PPO can smooth out this distribution.
   
-![image](https://github.com/user-attachments/assets/039a7f44-e737-4eed-a9df-2068137abced)
+![image](https://github.com/user-attachments/assets/1d57b61a-ba3c-4bcc-9ece-4759ddfbc340)
 
+## Real Preference dataset comparison
+
+#### SafeRLHF dataset
+![image](https://github.com/user-attachments/assets/bc3d8a4c-089a-49a7-83a2-921d7473682c)
+
+Outcomes:
+-  The paper emphasizes that DPO's performance is highly sensitive to the distribution of the preference data. By using additional supervised fine-tuning (SFT) on the preference dataset (mitigating shifts), DPO's safety rate improves, but its helpfulness remains lower than PPO's.
+- To address the distribution shift, the authors propose an iterative DPO method, where new responses are generated, and preferences are re-labeled in each iteration. This approach improves DPO's safety rate but still falls short in helpfulness compared to PPO, especially in complex tasks like code generation.
 
 # Key Factors to PPO for RLHF
-Pass
+
+- Advantage Normalization, is a technique, which stabilizes the training process by normalizing the advantages, leading to more reliable policy updates, it ensures that the PPO model can learn more effectively from human feedback.
+
+- The study finds that using large batch sizes during training significantly improves PPO's performance, particularly in complex tasks like code generation. Larger batch sizes help capture a more comprehensive range of gradients, leading to better generalization and robustness in the trained model.
+
+- Updating the reference model gradually through an EMA (Exponential Moving Average) instead of keeping it static prevents the PPO model from being overly regularized towards the initial supervised fine-tuned (SFT) model. This dynamic adjustment helps the PPO model adapt more effectively during training, leading to better performance, especially in challenging tasks.
+  
+![image](https://github.com/user-attachments/assets/c542f9b6-211e-4e18-9e18-2751fc5d9311)
 
 # Benchmark results
-Pass
+#### SafeRLHF
+![image](https://github.com/user-attachments/assets/6d76a298-105c-4c3d-9932-9d5f44ad820a)
+
+#### APPS
+![image](https://github.com/user-attachments/assets/ac40bdd0-c3b5-4825-a8c7-d8ac0807baf0)
+
+#### CodeContest
+![image](https://github.com/user-attachments/assets/535d1582-82ee-4800-91f2-b79003eb8419)
