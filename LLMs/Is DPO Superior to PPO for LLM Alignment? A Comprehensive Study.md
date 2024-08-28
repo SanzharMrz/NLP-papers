@@ -139,7 +139,23 @@ LDPO: DPO loss function.
 
 # Understanding the Limitation of DPO
 
+## Theoretical
 
+The authors prove that DPO, despite avoiding explicit reward modeling, is susceptible to the same generalization issues as Proximal Policy Optimization (PPO). They introduce a key theorem (Theorem 4.1) that demonstrates any solution found by PPO also minimizes the DPO objective. This indicates that DPO is prone to finding solutions that exploit out-of-distribution (OOD) data, leading to policies that may deviate significantly from human preferences. The theorem highlights that DPO's policy space includes all solutions found by PPO, but it may also encompass biased solutions that PPO would typically avoid due to its reliance on a reference policy. 
+
+## Emperical
+Through a synthetic scenario. Where:
+- Data:  Discrete spaces of prompts and responses, both of size 8. The preference dataset is randomly created under this constraint and only covers limited preference pairs for each input. They manually enforce the optimal response to be diagonal indices. 
+- policy model and reward are simple mlps (fcn)
+
+The authors illustrate that DPO can produce biased policies favoring OOD responses, which may deviate from human preferences. This is demonstrated with a counter-example where DPO assigns high probabilities to undesirable actions, a behavior PPO avoids due to stricter adherence to the reference policy.
+
+briefly:
+
+- We see that DPO and the reward model can assign high probabilities to OOD responses.
+- In the case of DPO, this behavior persists in both the reference and aligned models.
+- In the case of PPO, we see that although the reward model has the same issue, PPO can smooth out this distribution.
+  
 ![image](https://github.com/user-attachments/assets/039a7f44-e737-4eed-a9df-2068137abced)
 
 
